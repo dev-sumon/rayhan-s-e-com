@@ -1,0 +1,1435 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- google font Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- OwlCarousel cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Rayhan's ICT E-com</title>
+
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <div class="menu_section">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">Navbar</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="product_list.html">Product</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Dropdown
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="cart.html">Cart</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <section class="hero_section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 col-12">
+                    <div class="hero_content">
+                        <h1>Power Up Your Productivity with Premium Laptops</h1>
+                        <p>Discover our exclusive collection...</p>
+                        <div class="button">
+                            <a href="product_list.html" class="btn btn">Shop Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-12">
+                    <div class="hero_image">
+                        <img src="images/pexels-thirdman-7984778.jpg" alt="Interior Design" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- <section class="banner_section">
+
+    </section> -->
+
+
+    <section class="categories-section py-5">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">Choose your Brand</h2>
+            <div class="row">
+                <div class="owl-carousel category-slider owl-theme">
+                    <div class="item">
+                        <div class="">
+                            <div class="category-card" onclick="filterProducts('materials')">
+                                <a href="category_product.html"><img src="images/categories/apple-logo-screen.jpg"
+                                        alt="Apple logo" class="img-fluid"></a>
+                                <div class="category-overlay">
+                                    <h3><a style="color: #fff;" href="category_product.html">Apple</a></h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="">
+                            <div class="category-card" onclick="filterProducts('furniture')">
+                                <a href="category_product.html"><img src="images/categories/lenovo-logo.jpg"
+                                        alt="lenovo-logo" class="img-fluid"></a>
+                                <div class="category-overlay">
+                                    <h3><a style="color: #fff;" href="category_product.html">Lenovo</a></h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="">
+                            <div class="category-card" onclick="filterProducts('furniture')">
+                                <a href="category_product.html"><img src="images/categories/acer.jpg"
+                                        alt="Acer logo" class="img-fluid"></a>
+                                <div class="category-overlay">
+                                    <h3><a style="color: #fff;" href="category_product.html">Acer</a></h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="">
+                            <div class="category-card" onclick="filterProducts('furniture')">
+                                <a href="category_product.html"><img src="images/categories/asus.png"
+                                        alt="asus logo" class="img-fluid"></a>
+                                <div class="category-overlay">
+                                    <h3><a style="color: #fff;" href="category_product.html">Asus</a></h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="">
+                            <div class="category-card" onclick="filterProducts('furniture')">
+                                <a href="category_product.html"><img src="images/categories/dell.jpg"
+                                        alt="dell logo" class="img-fluid"></a>
+                                <div class="category-overlay">
+                                    <h3><a style="color: #fff;" href="category_product.html">DELL</a></h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- Product Filter  -->
+    <section class="filter-section py-3 bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="filter-buttons">
+                        <button class="btn btn-outline-primary active" onclick="filterProducts('all')">All
+                            Products</button>
+                        <button class="btn btn-outline-primary" onclick="filterProducts('materials')">Materials</button>
+                        <button class="btn btn-outline-primary" onclick="filterProducts('furniture')">Furniture</button>
+                    </div>
+                </div>
+                <div class="col-md-6 text-sm-start text-md-end">
+                    <select class="form-select d-inline-block w-auto" onchange="sortProducts(this.value)">
+                        <option value="default">Sort by</option>
+                        <option value="price-low">Price: Low to High</option>
+                        <option value="price-high">Price: High to Low</option>
+                        <option value="name">Name A-Z</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="all_product_section mt-5">
+        <div class="container">
+            <!-- <div class="section_title">
+                <h2>All Products</h2>
+            </div>
+            <div class="borderr">
+                <span></span>
+            </div>
+            <div class="section_desc">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis hic quas blanditiis maiores
+                    doloremque iure iste maxime earum adipisci praesentium...</p>
+            </div> -->
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/products/acer-aspire-lite-al15-52-12th-gen-intel-core-i3-31731151846.webp" alt="Premium Marble Tiles">
+                    </div>
+                    <div class="product-info">
+                        <a href="product.html">Lenovo IdeaPad Slim 3 15IRH8 13th Gen Intel Core i7-13620H Laptop</a>
+                        <ul class="mt-4">
+                            <li>Processor: Intel Core i5-1135G7 (8M Cache, 2.40 GHz up to 4.20 GHz)</li>
+                            <li>RAM: 8GB RAM, Storage: 512GB SSD</li>
+                            <li>Display: 14" FHD (1920 x 1080)</li>
+                            <li>Features: LED Backlight, Fingerprint</li>
+                        </ul>
+                        <div class="price-section">
+                            <span class="price"><i class="fa-solid fa-bangladeshi-taka-sign"></i> Price: 2,500</span>
+                        </div>
+                        <button class="add-to-cart">
+                            <a href="cart.html"><i class="fas fa-shopping-cart"></i>
+                                Add to Cart</a>
+                        </button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/products/acer-aspire-lite-al15-52-12th-gen-intel-core-i3-31731151846.webp" alt="Premium Marble Tiles">
+                    </div>
+                    <div class="product-info">
+                        <a href="product.html">Lenovo IdeaPad Slim 3 15IRH8 13th Gen Intel Core i7-13620H Laptop</a>
+                        <ul class="mt-4">
+                            <li>Processor: Intel Core i5-1135G7 (8M Cache, 2.40 GHz up to 4.20 GHz)</li>
+                            <li>RAM: 8GB RAM, Storage: 512GB SSD</li>
+                            <li>Display: 14" FHD (1920 x 1080)</li>
+                            <li>Features: LED Backlight, Fingerprint</li>
+                        </ul>
+                        <div class="price-section">
+                            <span class="price"><i class="fa-solid fa-bangladeshi-taka-sign"></i> Price: 2,500</span>
+                        </div>
+                        <button class="add-to-cart">
+                            <a href="cart.html"><i class="fas fa-shopping-cart"></i>
+                                Add to Cart</a>
+                        </button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/products/acer-aspire-lite-al15-52-12th-gen-intel-core-i3-31731151846.webp" alt="Premium Marble Tiles">
+                    </div>
+                    <div class="product-info">
+                        <a href="product.html">Lenovo IdeaPad Slim 3 15IRH8 13th Gen Intel Core i7-13620H Laptop</a>
+                        <ul class="mt-4">
+                            <li>Processor: Intel Core i5-1135G7 (8M Cache, 2.40 GHz up to 4.20 GHz)</li>
+                            <li>RAM: 8GB RAM, Storage: 512GB SSD</li>
+                            <li>Display: 14" FHD (1920 x 1080)</li>
+                            <li>Features: LED Backlight, Fingerprint</li>
+                        </ul>
+                        <div class="price-section">
+                            <span class="price"><i class="fa-solid fa-bangladeshi-taka-sign"></i> Price: 2,500</span>
+                        </div>
+                        <button class="add-to-cart">
+                            <a href="cart.html"><i class="fas fa-shopping-cart"></i>
+                                Add to Cart</a>
+                        </button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/products/acer-aspire-lite-al15-52-12th-gen-intel-core-i3-31731151846.webp" alt="Premium Marble Tiles">
+                    </div>
+                    <div class="product-info">
+                        <a href="product.html">Lenovo IdeaPad Slim 3 15IRH8 13th Gen Intel Core i7-13620H Laptop</a>
+                        <ul class="mt-4">
+                            <li>Processor: Intel Core i5-1135G7 (8M Cache, 2.40 GHz up to 4.20 GHz)</li>
+                            <li>RAM: 8GB RAM, Storage: 512GB SSD</li>
+                            <li>Display: 14" FHD (1920 x 1080)</li>
+                            <li>Features: LED Backlight, Fingerprint</li>
+                        </ul>
+                        <div class="price-section">
+                            <span class="price"><i class="fa-solid fa-bangladeshi-taka-sign"></i> Price: 2,500</span>
+                        </div>
+                        <button class="add-to-cart">
+                            <a href="cart.html"><i class="fas fa-shopping-cart"></i>
+                                Add to Cart</a>
+                        </button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/products/acer-aspire-lite-al15-52-12th-gen-intel-core-i3-31731151846.webp" alt="Premium Marble Tiles">
+                    </div>
+                    <div class="product-info">
+                        <a href="product.html">Lenovo IdeaPad Slim 3 15IRH8 13th Gen Intel Core i7-13620H Laptop</a>
+                        <ul class="mt-4">
+                            <li>Processor: Intel Core i5-1135G7 (8M Cache, 2.40 GHz up to 4.20 GHz)</li>
+                            <li>RAM: 8GB RAM, Storage: 512GB SSD</li>
+                            <li>Display: 14" FHD (1920 x 1080)</li>
+                            <li>Features: LED Backlight, Fingerprint</li>
+                        </ul>
+                        <div class="price-section">
+                            <span class="price"><i class="fa-solid fa-bangladeshi-taka-sign"></i> Price: 2,500</span>
+                        </div>
+                        <button class="add-to-cart">
+                            <a href="cart.html"><i class="fas fa-shopping-cart"></i>
+                                Add to Cart</a>
+                        </button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/products/acer-aspire-lite-al15-52-12th-gen-intel-core-i3-31731151846.webp" alt="Premium Marble Tiles">
+                    </div>
+                    <div class="product-info">
+                        <a href="product.html">Lenovo IdeaPad Slim 3 15IRH8 13th Gen Intel Core i7-13620H Laptop</a>
+                        <ul class="mt-4">
+                            <li>Processor: Intel Core i5-1135G7 (8M Cache, 2.40 GHz up to 4.20 GHz)</li>
+                            <li>RAM: 8GB RAM, Storage: 512GB SSD</li>
+                            <li>Display: 14" FHD (1920 x 1080)</li>
+                            <li>Features: LED Backlight, Fingerprint</li>
+                        </ul>
+                        <div class="price-section">
+                            <span class="price"><i class="fa-solid fa-bangladeshi-taka-sign"></i> Price: 2,500</span>
+                        </div>
+                        <button class="add-to-cart">
+                            <a href="cart.html"><i class="fas fa-shopping-cart"></i>
+                                Add to Cart</a>
+                        </button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/products/acer-aspire-lite-al15-52-12th-gen-intel-core-i3-31731151846.webp" alt="Premium Marble Tiles">
+                    </div>
+                    <div class="product-info">
+                        <a href="product.html">Lenovo IdeaPad Slim 3 15IRH8 13th Gen Intel Core i7-13620H Laptop</a>
+                        <ul class="mt-4">
+                            <li>Processor: Intel Core i5-1135G7 (8M Cache, 2.40 GHz up to 4.20 GHz)</li>
+                            <li>RAM: 8GB RAM, Storage: 512GB SSD</li>
+                            <li>Display: 14" FHD (1920 x 1080)</li>
+                            <li>Features: LED Backlight, Fingerprint</li>
+                        </ul>
+                        <div class="price-section">
+                            <span class="price"><i class="fa-solid fa-bangladeshi-taka-sign"></i> Price: 2,500</span>
+                        </div>
+                        <button class="add-to-cart">
+                            <a href="cart.html"><i class="fas fa-shopping-cart"></i>
+                                Add to Cart</a>
+                        </button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/products/acer-aspire-lite-al15-52-12th-gen-intel-core-i3-31731151846.webp" alt="Premium Marble Tiles">
+                    </div>
+                    <div class="product-info">
+                        <a href="product.html">Lenovo IdeaPad Slim 3 15IRH8 13th Gen Intel Core i7-13620H Laptop</a>
+                        <ul class="mt-4">
+                            <li>Processor: Intel Core i5-1135G7 (8M Cache, 2.40 GHz up to 4.20 GHz)</li>
+                            <li>RAM: 8GB RAM, Storage: 512GB SSD</li>
+                            <li>Display: 14" FHD (1920 x 1080)</li>
+                            <li>Features: LED Backlight, Fingerprint</li>
+                        </ul>
+                        <div class="price-section">
+                            <span class="price"><i class="fa-solid fa-bangladeshi-taka-sign"></i> Price: 2,500</span>
+                        </div>
+                        <button class="add-to-cart">
+                            <a href="cart.html"><i class="fas fa-shopping-cart"></i>
+                                Add to Cart</a>
+                        </button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/products/acer-aspire-lite-al15-52-12th-gen-intel-core-i3-31731151846.webp" alt="Premium Marble Tiles">
+                    </div>
+                    <div class="product-info">
+                        <a href="product.html">Lenovo IdeaPad Slim 3 15IRH8 13th Gen Intel Core i7-13620H Laptop</a>
+                        <ul class="mt-4">
+                            <li>Processor: Intel Core i5-1135G7 (8M Cache, 2.40 GHz up to 4.20 GHz)</li>
+                            <li>RAM: 8GB RAM, Storage: 512GB SSD</li>
+                            <li>Display: 14" FHD (1920 x 1080)</li>
+                            <li>Features: LED Backlight, Fingerprint</li>
+                        </ul>
+                        <div class="price-section">
+                            <span class="price"><i class="fa-solid fa-bangladeshi-taka-sign"></i> Price: 2,500</span>
+                        </div>
+                        <button class="add-to-cart">
+                            <a href="cart.html"><i class="fas fa-shopping-cart"></i>
+                                Add to Cart</a>
+                        </button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/products/acer-aspire-lite-al15-52-12th-gen-intel-core-i3-31731151846.webp" alt="Premium Marble Tiles">
+                    </div>
+                    <div class="product-info">
+                        <a href="product.html">Lenovo IdeaPad Slim 3 15IRH8 13th Gen Intel Core i7-13620H Laptop</a>
+                        <ul class="mt-4">
+                            <li>Processor: Intel Core i5-1135G7 (8M Cache, 2.40 GHz up to 4.20 GHz)</li>
+                            <li>RAM: 8GB RAM, Storage: 512GB SSD</li>
+                            <li>Display: 14" FHD (1920 x 1080)</li>
+                            <li>Features: LED Backlight, Fingerprint</li>
+                        </ul>
+                        <div class="price-section">
+                            <span class="price"><i class="fa-solid fa-bangladeshi-taka-sign"></i> Price: 2,500</span>
+                        </div>
+                        <button class="add-to-cart">
+                            <a href="cart.html"><i class="fas fa-shopping-cart"></i>
+                                Add to Cart</a>
+                        </button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/products/acer-aspire-lite-al15-52-12th-gen-intel-core-i3-31731151846.webp" alt="Premium Marble Tiles">
+                    </div>
+                    <div class="product-info">
+                        <a href="product.html">Lenovo IdeaPad Slim 3 15IRH8 13th Gen Intel Core i7-13620H Laptop</a>
+                        <ul class="mt-4">
+                            <li>Processor: Intel Core i5-1135G7 (8M Cache, 2.40 GHz up to 4.20 GHz)</li>
+                            <li>RAM: 8GB RAM, Storage: 512GB SSD</li>
+                            <li>Display: 14" FHD (1920 x 1080)</li>
+                            <li>Features: LED Backlight, Fingerprint</li>
+                        </ul>
+                        <div class="price-section">
+                            <span class="price"><i class="fa-solid fa-bangladeshi-taka-sign"></i> Price: 2,500</span>
+                        </div>
+                        <button class="add-to-cart">
+                            <a href="cart.html"><i class="fas fa-shopping-cart"></i>
+                                Add to Cart</a>
+                        </button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/products/acer-aspire-lite-al15-52-12th-gen-intel-core-i3-31731151846.webp" alt="Premium Marble Tiles">
+                    </div>
+                    <div class="product-info">
+                        <a href="product.html">Lenovo IdeaPad Slim 3 15IRH8 13th Gen Intel Core i7-13620H Laptop</a>
+                        <ul class="mt-4">
+                            <li>Processor: Intel Core i5-1135G7 (8M Cache, 2.40 GHz up to 4.20 GHz)</li>
+                            <li>RAM: 8GB RAM, Storage: 512GB SSD</li>
+                            <li>Display: 14" FHD (1920 x 1080)</li>
+                            <li>Features: LED Backlight, Fingerprint</li>
+                        </ul>
+                        <div class="price-section">
+                            <span class="price"><i class="fa-solid fa-bangladeshi-taka-sign"></i> Price: 2,500</span>
+                        </div>
+                        <button class="add-to-cart">
+                            <a href="cart.html"><i class="fas fa-shopping-cart"></i>
+                                Add to Cart</a>
+                        </button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/products/acer-aspire-lite-al15-52-12th-gen-intel-core-i3-31731151846.webp" alt="Premium Marble Tiles">
+                    </div>
+                    <div class="product-info">
+                        <a href="product.html">Lenovo IdeaPad Slim 3 15IRH8 13th Gen Intel Core i7-13620H Laptop</a>
+                        <ul class="mt-4">
+                            <li>Processor: Intel Core i5-1135G7 (8M Cache, 2.40 GHz up to 4.20 GHz)</li>
+                            <li>RAM: 8GB RAM, Storage: 512GB SSD</li>
+                            <li>Display: 14" FHD (1920 x 1080)</li>
+                            <li>Features: LED Backlight, Fingerprint</li>
+                        </ul>
+                        <div class="price-section">
+                            <span class="price"><i class="fa-solid fa-bangladeshi-taka-sign"></i> Price: 2,500</span>
+                        </div>
+                        <button class="add-to-cart">
+                            <a href="cart.html"><i class="fas fa-shopping-cart"></i>
+                                Add to Cart</a>
+                        </button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/products/acer-aspire-lite-al15-52-12th-gen-intel-core-i3-31731151846.webp" alt="Premium Marble Tiles">
+                    </div>
+                    <div class="product-info">
+                        <a href="product.html">Lenovo IdeaPad Slim 3 15IRH8 13th Gen Intel Core i7-13620H Laptop</a>
+                        <ul class="mt-4">
+                            <li>Processor: Intel Core i5-1135G7 (8M Cache, 2.40 GHz up to 4.20 GHz)</li>
+                            <li>RAM: 8GB RAM, Storage: 512GB SSD</li>
+                            <li>Display: 14" FHD (1920 x 1080)</li>
+                            <li>Features: LED Backlight, Fingerprint</li>
+                        </ul>
+                        <div class="price-section">
+                            <span class="price"><i class="fa-solid fa-bangladeshi-taka-sign"></i> Price: 2,500</span>
+                        </div>
+                        <button class="add-to-cart">
+                            <a href="cart.html"><i class="fas fa-shopping-cart"></i>
+                                Add to Cart</a>
+                        </button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/products/acer-aspire-lite-al15-52-12th-gen-intel-core-i3-31731151846.webp" alt="Premium Marble Tiles">
+                    </div>
+                    <div class="product-info">
+                        <a href="product.html">Lenovo IdeaPad Slim 3 15IRH8 13th Gen Intel Core i7-13620H Laptop</a>
+                        <ul class="mt-4">
+                            <li>Processor: Intel Core i5-1135G7 (8M Cache, 2.40 GHz up to 4.20 GHz)</li>
+                            <li>RAM: 8GB RAM, Storage: 512GB SSD</li>
+                            <li>Display: 14" FHD (1920 x 1080)</li>
+                            <li>Features: LED Backlight, Fingerprint</li>
+                        </ul>
+                        <div class="price-section">
+                            <span class="price"><i class="fa-solid fa-bangladeshi-taka-sign"></i> Price: 2,500</span>
+                        </div>
+                        <button class="add-to-cart">
+                            <a href="cart.html"><i class="fas fa-shopping-cart"></i>
+                                Add to Cart</a>
+                        </button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/products/acer-aspire-lite-al15-52-12th-gen-intel-core-i3-31731151846.webp" alt="Premium Marble Tiles">
+                    </div>
+                    <div class="product-info">
+                        <a href="product.html">Lenovo IdeaPad Slim 3 15IRH8 13th Gen Intel Core i7-13620H Laptop</a>
+                        <ul class="mt-4">
+                            <li>Processor: Intel Core i5-1135G7 (8M Cache, 2.40 GHz up to 4.20 GHz)</li>
+                            <li>RAM: 8GB RAM, Storage: 512GB SSD</li>
+                            <li>Display: 14" FHD (1920 x 1080)</li>
+                            <li>Features: LED Backlight, Fingerprint</li>
+                        </ul>
+                        <div class="price-section">
+                            <span class="price"><i class="fa-solid fa-bangladeshi-taka-sign"></i> Price: 2,500</span>
+                        </div>
+                        <button class="add-to-cart">
+                            <a href="cart.html"><i class="fas fa-shopping-cart"></i>
+                                Add to Cart</a>
+                        </button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/products/acer-aspire-lite-al15-52-12th-gen-intel-core-i3-31731151846.webp" alt="Premium Marble Tiles">
+                    </div>
+                    <div class="product-info">
+                        <a href="product.html">Lenovo IdeaPad Slim 3 15IRH8 13th Gen Intel Core i7-13620H Laptop</a>
+                        <ul class="mt-4">
+                            <li>Processor: Intel Core i5-1135G7 (8M Cache, 2.40 GHz up to 4.20 GHz)</li>
+                            <li>RAM: 8GB RAM, Storage: 512GB SSD</li>
+                            <li>Display: 14" FHD (1920 x 1080)</li>
+                            <li>Features: LED Backlight, Fingerprint</li>
+                        </ul>
+                        <div class="price-section">
+                            <span class="price"><i class="fa-solid fa-bangladeshi-taka-sign"></i> Price: 2,500</span>
+                        </div>
+                        <button class="add-to-cart">
+                            <a href="cart.html"><i class="fas fa-shopping-cart"></i>
+                                Add to Cart</a>
+                        </button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/products/acer-aspire-lite-al15-52-12th-gen-intel-core-i3-31731151846.webp" alt="Premium Marble Tiles">
+                    </div>
+                    <div class="product-info">
+                        <a href="product.html">Lenovo IdeaPad Slim 3 15IRH8 13th Gen Intel Core i7-13620H Laptop</a>
+                        <ul class="mt-4">
+                            <li>Processor: Intel Core i5-1135G7 (8M Cache, 2.40 GHz up to 4.20 GHz)</li>
+                            <li>RAM: 8GB RAM, Storage: 512GB SSD</li>
+                            <li>Display: 14" FHD (1920 x 1080)</li>
+                            <li>Features: LED Backlight, Fingerprint</li>
+                        </ul>
+                        <div class="price-section">
+                            <span class="price"><i class="fa-solid fa-bangladeshi-taka-sign"></i> Price: 2,500</span>
+                        </div>
+                        <button class="add-to-cart">
+                            <a href="cart.html"><i class="fas fa-shopping-cart"></i>
+                                Add to Cart</a>
+                        </button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/products/acer-aspire-lite-al15-52-12th-gen-intel-core-i3-31731151846.webp" alt="Premium Marble Tiles">
+                    </div>
+                    <div class="product-info">
+                        <a href="product.html">Lenovo IdeaPad Slim 3 15IRH8 13th Gen Intel Core i7-13620H Laptop</a>
+                        <ul class="mt-4">
+                            <li>Processor: Intel Core i5-1135G7 (8M Cache, 2.40 GHz up to 4.20 GHz)</li>
+                            <li>RAM: 8GB RAM, Storage: 512GB SSD</li>
+                            <li>Display: 14" FHD (1920 x 1080)</li>
+                            <li>Features: LED Backlight, Fingerprint</li>
+                        </ul>
+                        <div class="price-section">
+                            <span class="price"><i class="fa-solid fa-bangladeshi-taka-sign"></i> Price: 2,500</span>
+                        </div>
+                        <button class="add-to-cart">
+                            <a href="cart.html"><i class="fas fa-shopping-cart"></i>
+                                Add to Cart</a>
+                        </button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/products/acer-aspire-lite-al15-52-12th-gen-intel-core-i3-31731151846.webp" alt="Premium Marble Tiles">
+                    </div>
+                    <div class="product-info">
+                        <a href="product.html">Lenovo IdeaPad Slim 3 15IRH8 13th Gen Intel Core i7-13620H Laptop</a>
+                        <ul class="mt-4">
+                            <li>Processor: Intel Core i5-1135G7 (8M Cache, 2.40 GHz up to 4.20 GHz)</li>
+                            <li>RAM: 8GB RAM, Storage: 512GB SSD</li>
+                            <li>Display: 14" FHD (1920 x 1080)</li>
+                            <li>Features: LED Backlight, Fingerprint</li>
+                        </ul>
+                        <div class="price-section">
+                            <span class="price"><i class="fa-solid fa-bangladeshi-taka-sign"></i> Price: 2,500</span>
+                        </div>
+                        <button class="add-to-cart">
+                            <a href="cart.html"><i class="fas fa-shopping-cart"></i>
+                                Add to Cart</a>
+                        </button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/products/acer-aspire-lite-al15-52-12th-gen-intel-core-i3-31731151846.webp" alt="Premium Marble Tiles">
+                    </div>
+                    <div class="product-info">
+                        <a href="product.html">Lenovo IdeaPad Slim 3 15IRH8 13th Gen Intel Core i7-13620H Laptop</a>
+                        <ul class="mt-4">
+                            <li>Processor: Intel Core i5-1135G7 (8M Cache, 2.40 GHz up to 4.20 GHz)</li>
+                            <li>RAM: 8GB RAM, Storage: 512GB SSD</li>
+                            <li>Display: 14" FHD (1920 x 1080)</li>
+                            <li>Features: LED Backlight, Fingerprint</li>
+                        </ul>
+                        <div class="price-section">
+                            <span class="price"><i class="fa-solid fa-bangladeshi-taka-sign"></i> Price: 2,500</span>
+                        </div>
+                        <button class="add-to-cart">
+                            <a href="cart.html"><i class="fas fa-shopping-cart"></i>
+                                Add to Cart</a>
+                        </button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/products/acer-aspire-lite-al15-52-12th-gen-intel-core-i3-31731151846.webp" alt="Premium Marble Tiles">
+                    </div>
+                    <div class="product-info">
+                        <a href="product.html">Lenovo IdeaPad Slim 3 15IRH8 13th Gen Intel Core i7-13620H Laptop</a>
+                        <ul class="mt-4">
+                            <li>Processor: Intel Core i5-1135G7 (8M Cache, 2.40 GHz up to 4.20 GHz)</li>
+                            <li>RAM: 8GB RAM, Storage: 512GB SSD</li>
+                            <li>Display: 14" FHD (1920 x 1080)</li>
+                            <li>Features: LED Backlight, Fingerprint</li>
+                        </ul>
+                        <div class="price-section">
+                            <span class="price"><i class="fa-solid fa-bangladeshi-taka-sign"></i> Price: 2,500</span>
+                        </div>
+                        <button class="add-to-cart">
+                            <a href="cart.html"><i class="fas fa-shopping-cart"></i>
+                                Add to Cart</a>
+                        </button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/products/acer-aspire-lite-al15-52-12th-gen-intel-core-i3-31731151846.webp" alt="Premium Marble Tiles">
+                    </div>
+                    <div class="product-info">
+                        <a href="product.html">Lenovo IdeaPad Slim 3 15IRH8 13th Gen Intel Core i7-13620H Laptop</a>
+                        <ul class="mt-4">
+                            <li>Processor: Intel Core i5-1135G7 (8M Cache, 2.40 GHz up to 4.20 GHz)</li>
+                            <li>RAM: 8GB RAM, Storage: 512GB SSD</li>
+                            <li>Display: 14" FHD (1920 x 1080)</li>
+                            <li>Features: LED Backlight, Fingerprint</li>
+                        </ul>
+                        <div class="price-section">
+                            <span class="price"><i class="fa-solid fa-bangladeshi-taka-sign"></i> Price: 2,500</span>
+                        </div>
+                        <button class="add-to-cart">
+                            <a href="cart.html"><i class="fas fa-shopping-cart"></i>
+                                Add to Cart</a>
+                        </button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/products/acer-aspire-lite-al15-52-12th-gen-intel-core-i3-31731151846.webp" alt="Premium Marble Tiles">
+                    </div>
+                    <div class="product-info">
+                        <a href="product.html">Lenovo IdeaPad Slim 3 15IRH8 13th Gen Intel Core i7-13620H Laptop</a>
+                        <ul class="mt-4">
+                            <li>Processor: Intel Core i5-1135G7 (8M Cache, 2.40 GHz up to 4.20 GHz)</li>
+                            <li>RAM: 8GB RAM, Storage: 512GB SSD</li>
+                            <li>Display: 14" FHD (1920 x 1080)</li>
+                            <li>Features: LED Backlight, Fingerprint</li>
+                        </ul>
+                        <div class="price-section">
+                            <span class="price"><i class="fa-solid fa-bangladeshi-taka-sign"></i> Price: 2,500</span>
+                        </div>
+                        <button class="add-to-cart">
+                            <a href="cart.html"><i class="fas fa-shopping-cart"></i>
+                                Add to Cart</a>
+                        </button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/products/acer-aspire-lite-al15-52-12th-gen-intel-core-i3-31731151846.webp" alt="Premium Marble Tiles">
+                    </div>
+                    <div class="product-info">
+                        <a href="product.html">Lenovo IdeaPad Slim 3 15IRH8 13th Gen Intel Core i7-13620H Laptop</a>
+                        <ul class="mt-4">
+                            <li>Processor: Intel Core i5-1135G7 (8M Cache, 2.40 GHz up to 4.20 GHz)</li>
+                            <li>RAM: 8GB RAM, Storage: 512GB SSD</li>
+                            <li>Display: 14" FHD (1920 x 1080)</li>
+                            <li>Features: LED Backlight, Fingerprint</li>
+                        </ul>
+                        <div class="price-section">
+                            <span class="price"><i class="fa-solid fa-bangladeshi-taka-sign"></i> Price: 2,500</span>
+                        </div>
+                        <button class="add-to-cart">
+                            <a href="cart.html"><i class="fas fa-shopping-cart"></i>
+                                Add to Cart</a>
+                        </button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/products/acer-aspire-lite-al15-52-12th-gen-intel-core-i3-31731151846.webp" alt="Premium Marble Tiles">
+                    </div>
+                    <div class="product-info">
+                        <a href="product.html">Lenovo IdeaPad Slim 3 15IRH8 13th Gen Intel Core i7-13620H Laptop</a>
+                        <ul class="mt-4">
+                            <li>Processor: Intel Core i5-1135G7 (8M Cache, 2.40 GHz up to 4.20 GHz)</li>
+                            <li>RAM: 8GB RAM, Storage: 512GB SSD</li>
+                            <li>Display: 14" FHD (1920 x 1080)</li>
+                            <li>Features: LED Backlight, Fingerprint</li>
+                        </ul>
+                        <div class="price-section">
+                            <span class="price"><i class="fa-solid fa-bangladeshi-taka-sign"></i> Price: 2,500</span>
+                        </div>
+                        <button class="add-to-cart">
+                            <a href="cart.html"><i class="fas fa-shopping-cart"></i>
+                                Add to Cart</a>
+                        </button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/products/acer-aspire-lite-al15-52-12th-gen-intel-core-i3-31731151846.webp" alt="Premium Marble Tiles">
+                    </div>
+                    <div class="product-info">
+                        <a href="product.html">Lenovo IdeaPad Slim 3 15IRH8 13th Gen Intel Core i7-13620H Laptop</a>
+                        <ul class="mt-4">
+                            <li>Processor: Intel Core i5-1135G7 (8M Cache, 2.40 GHz up to 4.20 GHz)</li>
+                            <li>RAM: 8GB RAM, Storage: 512GB SSD</li>
+                            <li>Display: 14" FHD (1920 x 1080)</li>
+                            <li>Features: LED Backlight, Fingerprint</li>
+                        </ul>
+                        <div class="price-section">
+                            <span class="price"><i class="fa-solid fa-bangladeshi-taka-sign"></i> Price: 2,500</span>
+                        </div>
+                        <button class="add-to-cart">
+                            <a href="cart.html"><i class="fas fa-shopping-cart"></i>
+                                Add to Cart</a>
+                        </button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/products/acer-aspire-lite-al15-52-12th-gen-intel-core-i3-31731151846.webp" alt="Premium Marble Tiles">
+                    </div>
+                    <div class="product-info">
+                        <a href="product.html">Lenovo IdeaPad Slim 3 15IRH8 13th Gen Intel Core i7-13620H Laptop</a>
+                        <ul class="mt-4">
+                            <li>Processor: Intel Core i5-1135G7 (8M Cache, 2.40 GHz up to 4.20 GHz)</li>
+                            <li>RAM: 8GB RAM, Storage: 512GB SSD</li>
+                            <li>Display: 14" FHD (1920 x 1080)</li>
+                            <li>Features: LED Backlight, Fingerprint</li>
+                        </ul>
+                        <div class="price-section">
+                            <span class="price"><i class="fa-solid fa-bangladeshi-taka-sign"></i> Price: 2,500</span>
+                        </div>
+                        <button class="add-to-cart">
+                            <a href="cart.html"><i class="fas fa-shopping-cart"></i>
+                                Add to Cart</a>
+                        </button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/products/acer-aspire-lite-al15-52-12th-gen-intel-core-i3-31731151846.webp" alt="Premium Marble Tiles">
+                    </div>
+                    <div class="product-info">
+                        <a href="product.html">Lenovo IdeaPad Slim 3 15IRH8 13th Gen Intel Core i7-13620H Laptop</a>
+                        <ul class="mt-4">
+                            <li>Processor: Intel Core i5-1135G7 (8M Cache, 2.40 GHz up to 4.20 GHz)</li>
+                            <li>RAM: 8GB RAM, Storage: 512GB SSD</li>
+                            <li>Display: 14" FHD (1920 x 1080)</li>
+                            <li>Features: LED Backlight, Fingerprint</li>
+                        </ul>
+                        <div class="price-section">
+                            <span class="price"><i class="fa-solid fa-bangladeshi-taka-sign"></i> Price: 2,500</span>
+                        </div>
+                        <button class="add-to-cart">
+                            <a href="cart.html"><i class="fas fa-shopping-cart"></i>
+                                Add to Cart</a>
+                        </button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/products/acer-aspire-lite-al15-52-12th-gen-intel-core-i3-31731151846.webp" alt="Premium Marble Tiles">
+                    </div>
+                    <div class="product-info">
+                        <a href="product.html">Lenovo IdeaPad Slim 3 15IRH8 13th Gen Intel Core i7-13620H Laptop</a>
+                        <ul class="mt-4">
+                            <li>Processor: Intel Core i5-1135G7 (8M Cache, 2.40 GHz up to 4.20 GHz)</li>
+                            <li>RAM: 8GB RAM, Storage: 512GB SSD</li>
+                            <li>Display: 14" FHD (1920 x 1080)</li>
+                            <li>Features: LED Backlight, Fingerprint</li>
+                        </ul>
+                        <div class="price-section">
+                            <span class="price"><i class="fa-solid fa-bangladeshi-taka-sign"></i> Price: 2,500</span>
+                        </div>
+                        <button class="add-to-cart">
+                            <a href="cart.html"><i class="fas fa-shopping-cart"></i>
+                                Add to Cart</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="featured">
+        <div class="container">
+            <div class="section-header mb-5">
+                <h2 class="section-title">Popular Product</h2>
+                <div class="borderr">
+                    <span></span>
+                </div>
+                <p class="section-subtitle">
+                    We've tailored our courses to teach crucial professional skills. The insights and proficiency gained
+                    will secure your preferred role in the global job market. You can enroll in any of our courses,
+                    whenever it suits you.
+                </p>
+            </div>
+            <div class="product-grid">
+                <!-- <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/products/New Project (9).jpg" alt="Premium Marble Tiles">
+                    </div>
+                    <div class="product-info">
+
+                        <a href="product.html">Premium Marble Tiles</a>
+                        <div class="price-section">
+                            <span class="price"><i class="fa-solid fa-bangladeshi-taka-sign"></i> Price: 2,500</span>
+                        </div>
+                      <button class="add-to-cart">
+                            <a href="cart.html"><i class="fas fa-shopping-cart"></i>
+                            Add to Cart</a>
+                        </button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/products/protfolio_10.jpg" alt="Luxury sofa set">
+                    </div>
+                    <div class="product-info">
+                        <a href="product.html">Luxury sofa set</a>
+                        <p class="product-description">5 seater comfortable sofa</p>
+                        <div class="price-section">
+                            <span class="price">Price: 85,000Tk</span>
+                        </div>
+                      <button class="add-to-cart">
+                            <a href="cart.html"><i class="fas fa-shopping-cart"></i>
+                            Add to Cart</a>
+                        </button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/products/protfolio_12.jpg" alt="Modern chandelier">
+                    </div>
+                    <div class="product-info">
+                        <a href="product.html">Modern chandelier</a>
+                        <p class="product-description">Crystal Design LED Chandelier</p>
+                        <div class="price-section">
+                            <span class="price">Price: 15,000Tk</span>
+                        </div>
+                      <button class="add-to-cart">
+                            <a href="cart.html"><i class="fas fa-shopping-cart"></i>
+                            Add to Cart</a>
+                        </button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/products/protfolio_13.jpg" alt="Wooden dining table">
+                    </div>
+                    <div class="product-info">
+                        <a href="product.html">Wooden dining table</a>
+                        <p class="product-description">6-seater solid wood table</p>
+                        <div class="price-section">
+                            <span class="price">Price: 45,000Tk</span>
+                        </div>
+                      <button class="add-to-cart">
+                            <a href="cart.html"><i class="fas fa-shopping-cart"></i>
+                            Add to Cart</a>
+                        </button>
+                    </div>
+                </div> -->
+
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/products/acer-aspire-lite-al15-52-12th-gen-intel-core-i3-31731151846.webp" alt="Premium Marble Tiles">
+                    </div>
+                    <div class="product-info">
+                        <a href="product.html">Lenovo IdeaPad Slim 3 15IRH8 13th Gen Intel Core i7-13620H Laptop</a>
+                        <ul class="mt-4">
+                            <li>Processor: Intel Core i5-1135G7 (8M Cache, 2.40 GHz up to 4.20 GHz)</li>
+                            <li>RAM: 8GB RAM, Storage: 512GB SSD</li>
+                            <li>Display: 14" FHD (1920 x 1080)</li>
+                            <li>Features: LED Backlight, Fingerprint</li>
+                        </ul>
+                        <div class="price-section">
+                            <span class="price"><i class="fa-solid fa-bangladeshi-taka-sign"></i> Price: 2,500</span>
+                        </div>
+                        <button class="add-to-cart">
+                            <a href="cart.html"><i class="fas fa-shopping-cart"></i>
+                                Add to Cart</a>
+                        </button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/products/acer-aspire-lite-al15-52-12th-gen-intel-core-i3-31731151846.webp" alt="Premium Marble Tiles">
+                    </div>
+                    <div class="product-info">
+                        <a href="product.html">Lenovo IdeaPad Slim 3 15IRH8 13th Gen Intel Core i7-13620H Laptop</a>
+                        <ul class="mt-4">
+                            <li>Processor: Intel Core i5-1135G7 (8M Cache, 2.40 GHz up to 4.20 GHz)</li>
+                            <li>RAM: 8GB RAM, Storage: 512GB SSD</li>
+                            <li>Display: 14" FHD (1920 x 1080)</li>
+                            <li>Features: LED Backlight, Fingerprint</li>
+                        </ul>
+                        <div class="price-section">
+                            <span class="price"><i class="fa-solid fa-bangladeshi-taka-sign"></i> Price: 2,500</span>
+                        </div>
+                        <button class="add-to-cart">
+                            <a href="cart.html"><i class="fas fa-shopping-cart"></i>
+                                Add to Cart</a>
+                        </button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/products/acer-aspire-lite-al15-52-12th-gen-intel-core-i3-31731151846.webp" alt="Premium Marble Tiles">
+                    </div>
+                    <div class="product-info">
+                        <a href="product.html">Lenovo IdeaPad Slim 3 15IRH8 13th Gen Intel Core i7-13620H Laptop</a>
+                        <ul class="mt-4">
+                            <li>Processor: Intel Core i5-1135G7 (8M Cache, 2.40 GHz up to 4.20 GHz)</li>
+                            <li>RAM: 8GB RAM, Storage: 512GB SSD</li>
+                            <li>Display: 14" FHD (1920 x 1080)</li>
+                            <li>Features: LED Backlight, Fingerprint</li>
+                        </ul>
+                        <div class="price-section">
+                            <span class="price"><i class="fa-solid fa-bangladeshi-taka-sign"></i> Price: 2,500</span>
+                        </div>
+                        <button class="add-to-cart">
+                            <a href="cart.html"><i class="fas fa-shopping-cart"></i>
+                                Add to Cart</a>
+                        </button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/products/acer-aspire-lite-al15-52-12th-gen-intel-core-i3-31731151846.webp" alt="Premium Marble Tiles">
+                    </div>
+                    <div class="product-info">
+                        <a href="product.html">Lenovo IdeaPad Slim 3 15IRH8 13th Gen Intel Core i7-13620H Laptop</a>
+                        <ul class="mt-4">
+                            <li>Processor: Intel Core i5-1135G7 (8M Cache, 2.40 GHz up to 4.20 GHz)</li>
+                            <li>RAM: 8GB RAM, Storage: 512GB SSD</li>
+                            <li>Display: 14" FHD (1920 x 1080)</li>
+                            <li>Features: LED Backlight, Fingerprint</li>
+                        </ul>
+                        <div class="price-section">
+                            <span class="price"><i class="fa-solid fa-bangladeshi-taka-sign"></i> Price: 2,500</span>
+                        </div>
+                        <button class="add-to-cart">
+                            <a href="cart.html"><i class="fas fa-shopping-cart"></i>
+                                Add to Cart</a>
+                        </button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/products/acer-aspire-lite-al15-52-12th-gen-intel-core-i3-31731151846.webp" alt="Premium Marble Tiles">
+                    </div>
+                    <div class="product-info">
+                        <a href="product.html">Lenovo IdeaPad Slim 3 15IRH8 13th Gen Intel Core i7-13620H Laptop</a>
+                        <ul class="mt-4">
+                            <li>Processor: Intel Core i5-1135G7 (8M Cache, 2.40 GHz up to 4.20 GHz)</li>
+                            <li>RAM: 8GB RAM, Storage: 512GB SSD</li>
+                            <li>Display: 14" FHD (1920 x 1080)</li>
+                            <li>Features: LED Backlight, Fingerprint</li>
+                        </ul>
+                        <div class="price-section">
+                            <span class="price"><i class="fa-solid fa-bangladeshi-taka-sign"></i> Price: 2,500</span>
+                        </div>
+                        <button class="add-to-cart">
+                            <a href="cart.html"><i class="fas fa-shopping-cart"></i>
+                                Add to Cart</a>
+                        </button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/products/acer-aspire-lite-al15-52-12th-gen-intel-core-i3-31731151846.webp" alt="Premium Marble Tiles">
+                    </div>
+                    <div class="product-info">
+                        <a href="product.html">Lenovo IdeaPad Slim 3 15IRH8 13th Gen Intel Core i7-13620H Laptop</a>
+                        <ul class="mt-4">
+                            <li>Processor: Intel Core i5-1135G7 (8M Cache, 2.40 GHz up to 4.20 GHz)</li>
+                            <li>RAM: 8GB RAM, Storage: 512GB SSD</li>
+                            <li>Display: 14" FHD (1920 x 1080)</li>
+                            <li>Features: LED Backlight, Fingerprint</li>
+                        </ul>
+                        <div class="price-section">
+                            <span class="price"><i class="fa-solid fa-bangladeshi-taka-sign"></i> Price: 2,500</span>
+                        </div>
+                        <button class="add-to-cart">
+                            <a href="cart.html"><i class="fas fa-shopping-cart"></i>
+                                Add to Cart</a>
+                        </button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/products/acer-aspire-lite-al15-52-12th-gen-intel-core-i3-31731151846.webp" alt="Premium Marble Tiles">
+                    </div>
+                    <div class="product-info">
+                        <a href="product.html">Lenovo IdeaPad Slim 3 15IRH8 13th Gen Intel Core i7-13620H Laptop</a>
+                        <ul class="mt-4">
+                            <li>Processor: Intel Core i5-1135G7 (8M Cache, 2.40 GHz up to 4.20 GHz)</li>
+                            <li>RAM: 8GB RAM, Storage: 512GB SSD</li>
+                            <li>Display: 14" FHD (1920 x 1080)</li>
+                            <li>Features: LED Backlight, Fingerprint</li>
+                        </ul>
+                        <div class="price-section">
+                            <span class="price"><i class="fa-solid fa-bangladeshi-taka-sign"></i> Price: 2,500</span>
+                        </div>
+                        <button class="add-to-cart">
+                            <a href="cart.html"><i class="fas fa-shopping-cart"></i>
+                                Add to Cart</a>
+                        </button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/products/acer-aspire-lite-al15-52-12th-gen-intel-core-i3-31731151846.webp" alt="Premium Marble Tiles">
+                    </div>
+                    <div class="product-info">
+                        <a href="product.html">Lenovo IdeaPad Slim 3 15IRH8 13th Gen Intel Core i7-13620H Laptop</a>
+                        <ul class="mt-4">
+                            <li>Processor: Intel Core i5-1135G7 (8M Cache, 2.40 GHz up to 4.20 GHz)</li>
+                            <li>RAM: 8GB RAM, Storage: 512GB SSD</li>
+                            <li>Display: 14" FHD (1920 x 1080)</li>
+                            <li>Features: LED Backlight, Fingerprint</li>
+                        </ul>
+                        <div class="price-section">
+                            <span class="price"><i class="fa-solid fa-bangladeshi-taka-sign"></i> Price: 2,500</span>
+                        </div>
+                        <button class="add-to-cart">
+                            <a href="cart.html"><i class="fas fa-shopping-cart"></i>
+                                Add to Cart</a>
+                        </button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/products/acer-aspire-lite-al15-52-12th-gen-intel-core-i3-31731151846.webp" alt="Premium Marble Tiles">
+                    </div>
+                    <div class="product-info">
+                        <a href="product.html">Lenovo IdeaPad Slim 3 15IRH8 13th Gen Intel Core i7-13620H Laptop</a>
+                        <ul class="mt-4">
+                            <li>Processor: Intel Core i5-1135G7 (8M Cache, 2.40 GHz up to 4.20 GHz)</li>
+                            <li>RAM: 8GB RAM, Storage: 512GB SSD</li>
+                            <li>Display: 14" FHD (1920 x 1080)</li>
+                            <li>Features: LED Backlight, Fingerprint</li>
+                        </ul>
+                        <div class="price-section">
+                            <span class="price"><i class="fa-solid fa-bangladeshi-taka-sign"></i> Price: 2,500</span>
+                        </div>
+                        <button class="add-to-cart">
+                            <a href="cart.html"><i class="fas fa-shopping-cart"></i>
+                                Add to Cart</a>
+                        </button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/products/acer-aspire-lite-al15-52-12th-gen-intel-core-i3-31731151846.webp" alt="Premium Marble Tiles">
+                    </div>
+                    <div class="product-info">
+                        <a href="product.html">Lenovo IdeaPad Slim 3 15IRH8 13th Gen Intel Core i7-13620H Laptop</a>
+                        <ul class="mt-4">
+                            <li>Processor: Intel Core i5-1135G7 (8M Cache, 2.40 GHz up to 4.20 GHz)</li>
+                            <li>RAM: 8GB RAM, Storage: 512GB SSD</li>
+                            <li>Display: 14" FHD (1920 x 1080)</li>
+                            <li>Features: LED Backlight, Fingerprint</li>
+                        </ul>
+                        <div class="price-section">
+                            <span class="price"><i class="fa-solid fa-bangladeshi-taka-sign"></i> Price: 2,500</span>
+                        </div>
+                        <button class="add-to-cart">
+                            <a href="cart.html"><i class="fas fa-shopping-cart"></i>
+                                Add to Cart</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- <section class="all_product_section">
+        <div class="container">
+            <div class="section_title">
+                <h2>All Products</h2>
+            </div>
+            <div class="borderr">
+                <span></span>
+            </div>
+            <div class="section_desc">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis hic quas blanditiis maiores
+                    doloremque iure iste maxime earum adipisci praesentium...</p>
+            </div>
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/products/New Project (9).jpg" alt="Premium Marble Tiles">
+                    </div>
+                    <div class="product-info">
+                        <a href="">Premium Marble Tiles</a>
+                        <div class="price-section">
+                            <span class="price"><i class="fa-solid fa-bangladeshi-taka-sign"></i> Price: 2,500</span>
+                        </div>
+                      <button class="add-to-cart">
+                            <a href="cart.html"><i class="fas fa-shopping-cart"></i>
+                            Add to Cart</a>
+                        </button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/products/New Project (9).jpg" alt="Premium Marble Tiles">
+                    </div>
+                    <div class="product-info">
+                        <a href="">Premium Marble Tiles</a>
+                        <div class="price-section">
+                            <span class="price"><i class="fa-solid fa-bangladeshi-taka-sign"></i> Price: 2,500</span>
+                        </div>
+                      <button class="add-to-cart">
+                            <a href="cart.html"><i class="fas fa-shopping-cart"></i>
+                            Add to Cart</a>
+                        </button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/products/New Project (9).jpg" alt="Premium Marble Tiles">
+                    </div>
+                    <div class="product-info">
+                        <a href="">Premium Marble Tiles</a>
+                        <div class="price-section">
+                            <span class="price"><i class="fa-solid fa-bangladeshi-taka-sign"></i> Price: 2,500</span>
+                        </div>
+                      <button class="add-to-cart">
+                            <a href="cart.html"><i class="fas fa-shopping-cart"></i>
+                            Add to Cart</a>
+                        </button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/products/New Project (9).jpg" alt="Premium Marble Tiles">
+                    </div>
+                    <div class="product-info">
+                        <a href="">Premium Marble Tiles</a>
+                        <div class="price-section">
+                            <span class="price"><i class="fa-solid fa-bangladeshi-taka-sign"></i> Price: 2,500</span>
+                        </div>
+                      <button class="add-to-cart">
+                            <a href="cart.html"><i class="fas fa-shopping-cart"></i>
+                            Add to Cart</a>
+                        </button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/products/New Project (9).jpg" alt="Premium Marble Tiles">
+                    </div>
+                    <div class="product-info">
+                        <a href="">Premium Marble Tiles</a>
+                        <div class="price-section">
+                            <span class="price"><i class="fa-solid fa-bangladeshi-taka-sign"></i> Price: 2,500</span>
+                        </div>
+                      <button class="add-to-cart">
+                            <a href="cart.html"><i class="fas fa-shopping-cart"></i>
+                            Add to Cart</a>
+                        </button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/products/New Project (9).jpg" alt="Premium Marble Tiles">
+                    </div>
+                    <div class="product-info">
+                        <a href="">Premium Marble Tiles</a>
+                        <div class="price-section">
+                            <span class="price"><i class="fa-solid fa-bangladeshi-taka-sign"></i> Price: 2,500</span>
+                        </div>
+                      <button class="add-to-cart">
+                            <a href="cart.html"><i class="fas fa-shopping-cart"></i>
+                            Add to Cart</a>
+                        </button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/products/New Project (9).jpg" alt="Premium Marble Tiles">
+                    </div>
+                    <div class="product-info">
+                        <a href="">Premium Marble Tiles</a>
+                        <div class="price-section">
+                            <span class="price"><i class="fa-solid fa-bangladeshi-taka-sign"></i> Price: 2,500</span>
+                        </div>
+                      <button class="add-to-cart">
+                            <a href="cart.html"><i class="fas fa-shopping-cart"></i>
+                            Add to Cart</a>
+                        </button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/products/New Project (9).jpg" alt="Premium Marble Tiles">
+                    </div>
+                    <div class="product-info">
+                        <a href="">Premium Marble Tiles</a>
+
+                        <div class="price-section">
+                            <span class="price"><i class="fa-solid fa-bangladeshi-taka-sign"></i> Price: 2,500</span>
+                        </div>
+                      <button class="add-to-cart">
+                            <a href="cart.html"><i class="fas fa-shopping-cart"></i>
+                            Add to Cart</a>
+                        </button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/products/New Project (9).jpg" alt="Premium Marble Tiles">
+                    </div>
+                    <div class="product-info">
+                        <a href="">Premium Marble Tiles</a>
+                        <div class="price-section">
+                            <span class="price"><i class="fa-solid fa-bangladeshi-taka-sign"></i> Price: 2,500</span>
+                        </div>
+                        <button class="add-to-cart">
+                            <i class="fas fa-shopping-cart"></i>
+                            Add to Cart
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <section class="our_clint_section">
+        <div class="container">
+            <div class="section-header mb-5">
+                <h2 class="section-title">OUR HONOURABLE CLIENTS</h2>
+                <div class="borderr">
+                    <span></span>
+                </div>
+                <p class="section-subtitle">
+                    We provide services based on the client's feedback and design and functionality as per their
+                    requirements
+                </p>
+            </div>
+            <div class="clint_list d-flex">
+                <div class="owl-carousel client-slider owl-theme">
+                    <div class="item">
+                        <div class="images text-center">
+                            <img src="images/clicnt/1710049704.png" alt="" width="100%">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="images text-center">
+                            <img src="images/clicnt/1710049969.png" alt="" width="100%">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="images text-center">
+                            <img src="images/clicnt/1710049982.png" alt="" width="100%">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="images text-center">
+                            <img src="images/clicnt/1710735097.png" alt="" width="100%">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="images text-center">
+                            <img src="images/clicnt/1.png" alt="" width="100%">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="images text-center">
+                            <img src="images/clicnt/2.png" alt="" width="100%">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="images text-center">
+                            <img src="images/clicnt/3.png" alt="" width="100%">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="images">
+                            <img src="images/clicnt/4.png" alt="" width="100%">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="images text-center">
+                            <img src="images/clicnt/5.png" alt="" width="100%">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="images text-center">
+                            <img src="images/clicnt/6.png" alt="" width="100%">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="images text-center">
+                            <img src="images/clicnt/7.png" alt="" width="100%">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="images text-center">
+                            <img src="images/clicnt/8.png" alt="" width="100%">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer_data">
+            <p>
+                Copyright © 2017 - 2025 DESIGN AND DEVELOPED BY CREATIVE SHEBA LIMITED
+            </p>
+        </div>
+    </footer>
+
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <!-- Jquery cdn-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- OwlCarousel cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- OwlCarousel js -->
+    <script>
+        $('.category-slider').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: true,
+            autoplay: true,
+            autoplayTimeout: 2500,
+            smartSpeed: 2000,        // slide change smoothly হবে (milliseconds এ)
+            autoplayHoverPause: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 2
+                },
+                1000: {
+                    items: 3
+                }
+            }
+        });
+
+
+
+
+        $('.client-slider').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: false,
+            dots: false,
+            autoplay: true,
+            autoplayTimeout: 2500,
+            smartSpeed: 2000,
+            autoplayHoverPause: true,
+            responsive: {
+                0: { items: 2 },
+                600: { items: 3 },
+                1000: { items: 5 }   // ৫টা আইটেম
+            }
+        });
+    </script>
+</body>
+
+</html>
