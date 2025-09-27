@@ -17,6 +17,10 @@ a {
   line-height: 1.2;
 }
 
+.similar-product-card {
+  display: flex;
+}
+
 .hero_section .hero_content p {
   font-family: "Poppins", sans-serif;
   font-size: 1.2rem;
@@ -395,13 +399,13 @@ a {
 }
 
 .product-info a {
-    text-decoration: none;
-    font-family: "Poppins", sans-serif;
-    font-size: 18px;
-    font-weight: 500;
-    margin-bottom: 10px;
-    color: #2c347e;
-    box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  color: #2c347e;
+  box-sizing: border-box;
 }
 
 .product-description {
@@ -444,6 +448,7 @@ a {
   margin: 0;
   padding: 0;
 }
+
 .add-to-cart {
   width: 100%;
   color: #ffffff;
@@ -1045,6 +1050,25 @@ footer p {
   box-sizing: border-box;
 }
 
+/* Laptop page CSS Start */
+.laptop_details .specification-table .att-title {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 700;
+}
+.laptop_details #similar_products_section .list-view-details .card-text a{
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 700;
+    color: #000;
+} 
+.laptop_details #similar_products_section .list-view-details .button a{
+  
+}
+
+/* Laptop page CSS end */
 
 /* responsive start  */
 
@@ -1148,7 +1172,8 @@ footer p {
     text-align: end;
     margin-bottom: 22px;
   }
-  .align-items-center{
+
+  .align-items-center {
     display: block;
   }
 }
